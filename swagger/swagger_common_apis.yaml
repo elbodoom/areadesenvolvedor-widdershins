@@ -1,7 +1,7 @@
 ﻿openapi: 3.0.0
 info:
-  title: APIs OpenData do Open Banking Brasil
-  description: As APIs descritas neste documento são referentes as APIs da fase OpenData do Open Banking Brasil.
+  title: APIs Comuns
+  description: Obtém a descrição referente ao código de status retornado pelas APIs.
   version: 1.0.1
   contact:
     email: "apiteam@swagger.io"
@@ -13,9 +13,9 @@ paths:
   /status:
     get:
       tags:
-        - Discovery
-      summary: a descrição referente ao código de status retornado pelas APIs
-      description: " descrição referente ao código de status retornado pelas APIs"
+        - Status
+      summary: API de Status
+      description: "Obtém a descrição referente ao código de status retornado pelas APIs."
       operationId: "getStatus"
       responses:
         '200':
