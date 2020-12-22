@@ -41,7 +41,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ResponseDiscoveryOutageList'
-  /banking-agents:
+  /channels/v1/banking-agents:
     get:
       tags:
         - API - Canais de Atendimento
