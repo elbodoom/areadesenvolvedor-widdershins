@@ -46,7 +46,11 @@ paths:
       tags:
         - API - Canais de Atendimento
       summary: Correspondentes bancários
-      description: "Método para obter a lista de correspondentes bancários da instituição financeira."
+      description: |
+        Método para obter a lista de correspondentes bancários da instituição financeira.
+
+        ### Visão de alto nível das estruturas de dados
+        <img src="images/tld/TLD_Banking_Agents_v1.png">
       operationId: "getBankingAgents"
       responses:
         '200':
