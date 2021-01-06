@@ -27,6 +27,10 @@ paths:
 
         Este *endpoint* possibilita ao diretório consultar estatísticas operacionais das APIs disponibilizadas pelas instituições financeiras, a fim de avaliar a qualidade dos serviços fornecidos ao usuário final.
 
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: "getStatus"
       responses:
         '200':
@@ -49,7 +53,7 @@ paths:
 
         Obtêm a lista de indisponibilidade agendada para os serviços.
 
-        ## Especificação em OAS 3.0
+        ### Especificação em OAS 3.0
 
         <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
 
@@ -81,6 +85,10 @@ paths:
         ### Dicionário de dados
 
         <a href='dictionary/banking_agents.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
 
       operationId: "getBankingAgents"
       responses:
@@ -116,6 +124,10 @@ paths:
 
         <a href='dictionary/branches.csv' target="_blank">Fazer download do dicionário de dados</a>
 
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: "getBranches"
       responses:
         '200':
@@ -149,6 +161,10 @@ paths:
         ### Dicionário de dados
 
         <a href='dictionary/electronic_channels.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
 
       operationId: "getElectronicChannels"
       responses:
@@ -184,6 +200,10 @@ paths:
         ### Dicionário de dados
 
         <a href='dictionary/phone_channels.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
 
       operationId: "getPhoneChannels"
       responses:
@@ -221,6 +241,10 @@ paths:
 
         <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
 
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: "getSharedAutomatedTellerMachines"
       responses:
         '200':
@@ -255,6 +279,10 @@ paths:
 
         <a href='dictionary/personal_accounts.csv' target="_blank">Fazer download do dicionário de dados</a>
 
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getPersonalAccounts
       responses:
         '200':
@@ -288,6 +316,10 @@ paths:
         ### Dicionário de dados
 
         <a href='dictionary/business_accounts.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
 
       operationId: getBusinessAccounts
       responses:
@@ -325,6 +357,10 @@ paths:
 
         <a href='dictionary/business_loans.csv' target="_blank">Fazer download do dicionário de dados</a>
 
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getPersonalLoans
       responses:
         '200':
@@ -359,6 +395,10 @@ paths:
 
         <a href='dictionary/business_loans.csv' target="_blank">Fazer download do dicionário de dados</a>
 
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getBusinessLoans
       responses:
         '200':
@@ -391,6 +431,10 @@ paths:
 
         <a href='dictionary/personal_credit_cards.csv' target="_blank">Fazer download do dicionário de dados</a>
 
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getPersonalCreditCards
       responses:
         '200':
@@ -422,6 +466,10 @@ paths:
         ### Dicionário de dados
 
         <a href='dictionary/business_credit_cards.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
 
       operationId: getBusinessCreditCards
       responses:
@@ -457,6 +505,10 @@ paths:
 
         <a href='dictionary/personal_financings.csv' target="_blank">Fazer download do dicionário de dados</a>
 
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getPersonalFinancings
       responses:
         '200':
@@ -490,6 +542,10 @@ paths:
         ### Dicionário de dados
 
         <a href='dictionary/business_financings.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
 
       operationId: getBusinessFinancings
       responses:
@@ -525,6 +581,10 @@ paths:
 
         <a href='dictionary/personal_invoice_financings.csv' target="_blank">Fazer download do dicionário de dados</a>
 
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getPersonalInvoiceFinancings
       responses:
         '200':
@@ -558,6 +618,10 @@ paths:
         ### Dicionário de dados
 
         <a href='dictionary/business_invoice_financings.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
 
       operationId: getBusinessInvoiceFinancings
       responses:
@@ -593,6 +657,10 @@ paths:
         ### Dicionário de dados
 
         <a href='dictionary/personal_unarranged_account_overdraft.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ### Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
 
       operationId: getPersonalUnarrangedAccountOverdraft
       responses:
@@ -630,7 +698,7 @@ paths:
         <a href='dictionary/business_unarranged_account_overdraft.csv' target="_blank">Fazer download do dicionário de dados</a>
 
 
-        ## Especificação em OAS 3.0
+        ### Especificação em OAS 3.0
 
         <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
       operationId: getBusinessUnarrangedAccountOverdraft
@@ -655,7 +723,7 @@ paths:
 
         Este *endpoint* possibilita ao diretório consultar estatísticas operacionais das APIs disponibilizadas pelas instituições financeiras, a fim de avaliar a qualidade dos serviços fornecidos ao usuário final.
 
-        ## Especificação em OAS 3.0
+        ### Especificação em OAS 3.0
 
         <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
 
