@@ -2162,7 +2162,7 @@ This operation does not require authentication
   <span class="dl">'</span><span class="s1">Accept</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span>
 <span class="p">};</span>
 
-<span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://api.banco.com.br/open-banking/banking-agents</span><span class="dl">'</span><span class="p">,</span>
+<span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://api.banco.com.br/open-banking/channels/v1/banking-agents</span><span class="dl">'</span><span class="p">,</span>
 <span class="p">{</span>
   <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">GET</span><span class="dl">'</span><span class="p">,</span>
 
@@ -2176,9 +2176,13 @@ This operation does not require authentication
 
 </code></pre></div>
 
-<p><code>GET /banking-agents</code></p>
+<p><code>GET /channels/v1/banking-agents</code></p>
 
 <p>Método para obter a lista de correspondentes bancários da instituição financeira.</p>
+
+<h3 id='authentication-correspondentes-bancarios-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
+
+<p><img src="images/tld/TLD_Banking_Agents_v1-43e08403.png"></p>
 
 <blockquote>
 <p>Example responses</p>
@@ -4673,13 +4677,13 @@ This operation does not require authentication
 </tr>
 </tbody></table>
 
-<h4 id='authentication-metricas-sobre-detailed-descriptions'>Detailed descriptions</h4>
+<h4 id='authentication-metricas-visao-de-alto-nivel-das-estruturas-de-dados-detailed-descriptions'>Detailed descriptions</h4>
 
 <p><strong>period</strong>: Período a ser consultado
   * <code>CURRENT</code> - Métricas do dia atual.
   * <code>ALL</code> - Métricas de todo o período disponível.</p>
 
-<h4 id='authentication-metricas-sobre-enumerated-values'>Enumerated Values</h4>
+<h4 id='authentication-metricas-visao-de-alto-nivel-das-estruturas-de-dados-enumerated-values'>Enumerated Values</h4>
 
 <table><thead>
 <tr>
