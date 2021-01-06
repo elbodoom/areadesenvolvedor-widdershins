@@ -1,0 +1,20 @@
+<h2 id='semoasa-0-1-0-template-parameters'>Semoasa 0.1.0 template parameters</h2>
+<p><a href="https://github.com/RepreZen/Semoasa">Semoasa</a> (Specification Extension Metadata for OAS Annotations) is a machine-readable format for extensions to Swagger/OpenAPI 2.0 and 3.0 specifications. </p>
+<h3 id='semoasa-0-1-0-template-parameters-39-main-39-template'>&#39;main&#39; template</h3>
+<ul>
+<li><code>api</code> - the top-level Semoasa document</li>
+<li><code>header</code> - the front-matter of the Slate/Shins markdown document</li>
+<li><code>options</code> - the options passed to the renderer, includes defaults</li>
+<li><code>templates</code> - the doT templates object</li>
+<li><code>widdershins</code> - the contents of widdershins <code>package.json</code></li>
+<li><code>oas2_descs</code> - a map of OASv2 objects and descriptions</li>
+<li><code>oas3_descs</code> - a map of OASv3 objects and descriptions</li>
+<li><code>utils</code> - an object containing utility functions
+
+<ul>
+<li><code>yaml</code> - <code>yaml</code> instance</li>
+<li><code>schemaToArray</code> - converts a schema object to a flat list of properties</li>
+<li><code>getSample</code> - returns an example based on a schema object</li>
+<li><code>linkCase</code> - helper function which returns camelCased object names</li>
+</ul></li>
+</ul>
