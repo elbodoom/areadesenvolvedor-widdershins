@@ -18,7 +18,19 @@ paths:
       tags:
         - APIs Comuns
       summary: API de Status
-      description: "Obtém a descrição referente ao código de status retornado pelas APIs."
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Este *endpoint* possibilita ao diretório consultar estatísticas operacionais das APIs disponibilizadas pelas instituições financeiras, a fim de avaliar a qualidade dos serviços fornecidos ao usuário final.
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: "getStatus"
       responses:
         '200':
@@ -32,7 +44,19 @@ paths:
       tags:
         - APIs Comuns
       summary: API de Outages
-      description: "Obtêm a lista de indisponibilidade agendada para os serviços."
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtêm a lista de indisponibilidade agendada para os serviços.
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: "getOutage"
       responses:
         '200':
@@ -47,10 +71,25 @@ paths:
         - API - Canais de Atendimento
       summary: Correspondentes bancários
       description: |
-        Método para obter a lista de correspondentes bancários da instituição financeira.
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém a lista de Correspondentes bancários.
 
         ### Visão de alto nível das estruturas de dados
         <img src="images/tld/TLD_Banking_Agents_v1.png">
+
+        ### Dicionário de dados
+
+        <a href='dictionary/banking_agents.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: "getBankingAgents"
       responses:
         '200':
@@ -64,7 +103,31 @@ paths:
       tags:
         - API - Canais de Atendimento
       summary: Dependências próprias
-      description: "Método para obter a lista de dependências próprias da instituição financeira."
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém a lista de dependências próprias da instituição financeira.
+
+        Dependência própria é o espaço físico destinado ao atendimento ao público.
+
+        Tags: [Agência (Branch)](#glossarioAgencia), [CNPJ (CNPJ Number)](#glossarioCNPJ), [Marca (Brand)](#glossarioMarca), [Dependência (Branch)](#glossarioDependencia), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Posto de Atendimento Bancário - PAB (Branch)](#glossarioPostoAtendimentoBancario), [Posto de Atendimento Eletrônico – PAE (Branch)](#glossarioPostoAtendimentoEletronico) e [Unidade Administrativa Desmembrada – UAD (Branch)](#glossarioUnidadeAdministrativaDesmembrada).
+
+        ### Visão de alto de nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Branches_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/branches.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: "getBranches"
       responses:
         '200':
@@ -78,7 +141,31 @@ paths:
       tags:
         - API - Canais de Atendimento
       summary: Canais de atendimento eletrônico
-      description: "Método para obter a lista de canais eletrônicos de atendimento da instituição financeira."
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém a lista de canais eletrônicos próprios da instituição financeira.
+
+        Esse *endpoint* retorna os possíveis canais de atendimento eletrônico, bem como suas informações, serviços prestados e formas de acesso.
+
+        Tags: [CNPJ (CNPJ Number)](#glossarioCNPJ), [Marca (Brand)](#glossarioMarca) e [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira).
+
+        ### Visão de alto nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_ElectronicChannels_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/electronic_channels.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: "getElectronicChannels"
       responses:
         '200':
@@ -92,7 +179,32 @@ paths:
       tags:
         - API - Canais de Atendimento
       summary: Canais de atendimento telefônico
-      description: "Método para obter a lista de canais telefônicos de atendimento da instituição financeira."
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+
+        ### Visão Geral
+
+        Obtém a lista de canais telefônicos próprios da instituição financeira.
+
+        Esse *endpoint* retorna os possíveis canais de atendimento telefônico bem como suas informações, serviços prestados e formas de acesso.
+
+        Tags: [CNPJ (CNPJ Number)](#glossarioCNPJ), [Marca (Brand)](#glossarioMarca) e [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira).
+
+        ### Visão de alto nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_PhoneChannels_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/phone_channels.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: "getPhoneChannels"
       responses:
         '200':
@@ -106,7 +218,29 @@ paths:
       tags:
         - API - Canais de Atendimento
       summary: Terminais de Autoatendimento Compartilhado
-      description: "Método para obter a lista de terminais compartilhados de autoatendimento da instituição financeira."
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém a lista de terminais compartilhados de autoatendimento da instituição financeira.
+
+        Tags: [CNPJ (CNPJ Number)](#glossarioCNPJ), [Marca (Brand)](#glossarioMarca), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Terminais de Autoatendimento Compartilhados (Shared Automatic Teller Machine)](#glossarioTerminaisAutoAtendimentoCompartilhados).
+
+        ### Visão de alto de nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Shared_Automated_Teller_Machines_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/automated_teller_machines.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: "getSharedAutomatedTellerMachines"
       responses:
         '200':
@@ -120,7 +254,31 @@ paths:
       tags:
         - API - Produtos e Serviços
       summary: Contas pessoa natural
-      description: Obtém dados das contas
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém os dados da Conta Pessoa Natural.
+
+        Esta especificação inclui todos os artefatos relevantes para a Especificação de API sobre  Contas de depósito à vista, poupança e de pagamento pré-paga pessoa natural de dados abertos.
+
+        Tags: [Marca (Brand)](#glossarioMarca), [CNPJ (CNPJ Number)](#glossarioCNPJ), [Conta de depósito à vista (Account)](#glossarioContaDepositoVista), [Conta de pagamento pré-paga (Prepaid Payment Account)](#glossarioContaPagamentoPrePaga), [Conta de Poupança (Saving Account)](#glossarioContaPoupanca), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Pacote de Serviços (Service Bundles)](#glossarioPacoteServicos), [Taxa Referencial – TR (Referential Rate)](#glossarioTaxaReferencial) e [Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)](#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias).
+
+        ### Visão de alto de nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Personal_Accounts_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/personal_accounts.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getPersonalAccounts
       responses:
         '200':
@@ -134,7 +292,31 @@ paths:
       tags:
         - API - Produtos e Serviços
       summary: Contas pessoa jurídica
-      description: Obtém dados das contas pessoa jurídica
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém os dados da Conta Pessoa Jurídica.
+
+        Esta especificação inclui todos os artefatos relevantes para a Especificação de API sobre  Contas de depósito à vista, poupança e de pagamento pré-paga para pessoa jurídica de dados abertos.
+
+        Tags: [ Marca (Brand) ](#glossarioMarca), [CNPJ (CNPJ Number)](#glossarioCNPJ), [Conta de depósito à vista (Account)](#glossarioContaDepositoVista), [Conta de pagamento pré-paga (Prepaid Payment Account)](#glossarioContaPagamentoPrePaga), [Conta de Poupança (Saving Account)](#glossarioContaPoupanca), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Pacote de Serviços (Service Bundles)](#glossarioPacoteServicos), [Taxa Referencial – TR (Referential Rate)](#glossarioTaxaReferencial) e [Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)](#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias).
+
+        ### Visão de alto de nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Business_Accounts_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/business_accounts.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getBusinessAccounts
       responses:
         '200':
@@ -148,7 +330,33 @@ paths:
       tags:
         - API - Produtos e Serviços
       summary: Empréstimos pessoa natural
-      description: Obtém dados sobre empréstimos pessoa natural
+      description: |
+        Obtém dados sobre empréstimos pessoa natural
+
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém os dados de Empréstimos para pessoa jurídica.
+
+        Esta especificação inclui todos os itens relevantes para a Especificação de API de Empréstimos para pessoa jurídica de dados abertos.
+
+        Tags: [CNPJ (CNPJ Number)](#glossarioCNPJ), [Marca (Brand)](#glossarioMarca), [Crédito Rotativo (Overdraft)](#glossarioCreditoRotativo), [Empréstimo (Loan)](#glossarioEmprestimo), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Taxa Referencial – TR (Referential Rate)](#glossarioTaxaReferencial), [Indexador (Indexer)](#glossarioIndexador) e [Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)](#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias).
+
+        ### Visão de alto de nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Business_Loans_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/business_loans.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getPersonalLoans
       responses:
         '200':
@@ -162,7 +370,31 @@ paths:
       tags:
         - API - Produtos e Serviços
       summary: Empréstimos pessoa jurídica
-      description: Obtém dados sobre empréstimos pessoa jurídica
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém os dados de Empréstimos para pessoa jurídica.
+
+        Esta especificação inclui todos os itens relevantes para a Especificação de API de Empréstimos para pessoa jurídica de dados abertos.
+
+        Tags: [CNPJ (CNPJ Number)](#glossarioCNPJ), [Marca (Brand)](#glossarioMarca), [Crédito Rotativo (Overdraft)](#glossarioCreditoRotativo), [Empréstimo (Loan)](#glossarioEmprestimo), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Taxa Referencial – TR (Referential Rate)](#glossarioTaxaReferencial), [Indexador (Indexer)](#glossarioIndexador) e [Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)](#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias).
+
+        ### Visão de alto de nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Business_Loans_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/business_loans.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getBusinessLoans
       responses:
         '200':
@@ -176,7 +408,29 @@ paths:
       tags:
         - API - Produtos e Serviços
       summary: Cartão de crédito de pessoa natural
-      description: Obtém dados sobre cartões de crédito pessoa natural
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém os dados de produtos e serviços de cartões de crédito para pessoa natural.
+
+        Tags: [Marca (Brand)](#glossarioMarca),[Bandeira (Credit Card Network)](#glossarioBandeira), [CNPJ (CNPJ Number)](#glossarioCNPJ), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Conta de pagamento pós-paga (Credit Card)](#glossarioContaPagamentoPosPaga), [Crédito Rotativo (Overdraft)](#glossarioCreditoRotativo), [Indexador (Indexer)](#glossarioIndexador) e [Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)](#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias).
+
+        ### Visão de alto nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Personal_Credit_Cards_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/personal_credit_cards.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getPersonalCreditCards
       responses:
         '200':
@@ -190,7 +444,29 @@ paths:
       tags:
         - API - Produtos e Serviços
       summary: Cartão de crédito de pessoa jurídica
-      description: Obtém dados sobre cartões de crédito pessoa jurídica
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém os dados de produtos e serviços de cartões de crédito para pessoa jurídica.
+
+        Tags: [Marca (Brand)](#glossarioMarca),[Bandeira (Credit Card Network)](#glossarioBandeira), [CNPJ (CNPJ Number)](#glossarioCNPJ), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Conta de pagamento pós-paga (Credit Card)](#glossarioContaPagamentoPosPaga), [Crédito Rotativo (Overdraft)](#glossarioCreditoRotativo), [Indexador (Indexer)](#glossarioIndexador) e [Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)](#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias).
+
+        ### Visão de alto nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Business_Credit_Cards_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/business_credit_cards.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getBusinessCreditCards
       responses:
         '200':
@@ -204,7 +480,30 @@ paths:
       tags:
         - API - Produtos e Serviços
       summary: Financiamento Pessoa Natural
-      description: Obtém a lista de Financiamentos de Pessoa Natural
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém os dados de Financiamento para pessoa natural.
+
+        Esta especificação inclui todos os itens relevantes para a Especificação de API de Financiamentos para Pessoa Natural de dados abertos.
+
+        Tags: [CNPJ (CNPJ Number)](#glossarioCNPJ), [Marca (Brand)](#glossarioMarca), [Financiamento (Financing)](#glossarioFinanciamento), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Taxa Referencial – TR (Referential Rate)](#glossarioTaxaReferencial), [Indexador (Indexer)](#glossarioIndexador) e [Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)](#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias).
+
+        ### Visão de alto nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Personal_Financings_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/personal_financings.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
       operationId: getPersonalFinancings
       responses:
         '200':
@@ -218,7 +517,30 @@ paths:
       tags:
         - API - Produtos e Serviços
       summary: Financiamento Pessoa Jurídica
-      description: Obtém a lista de Financiamentos de Pessoa Jurídica.
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém os dados de Financiamento para pessoa jurídica.
+
+        Esta especificação inclui todos os itens relevantes para a Especificação de API de Financiamentos para Pessoa Jurídica de dados abertos.
+
+        Tags: [CNPJ (CNPJ Number)](#glossarioCNPJ), [Marca (Brand)](#glossarioMarca), [Financiamento (Financing)](#glossarioFinanciamento), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Taxa Referencial – TR (Referential Rate)](#glossarioTaxaReferencial), [Indexador (Indexer)](#glossarioIndexador) e [Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)](#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias).
+
+        ### Visão de alto nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Business_Financings_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/business_financings.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
       operationId: getBusinessFinancings
       responses:
         '200':
@@ -232,7 +554,31 @@ paths:
       tags:
         - API - Produtos e Serviços
       summary: Antecipação de recebíveis Pessoa Natural
-      description: Obtém a lista de Adiantamento de Recebíveis de Pessoa Natural.
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém os dados de Antecipação de Recebíveis.
+
+        Esta especificação inclui todos os itens relevantes para a Especificação de API de Antecipação de Recebíveis para Pessoa Natural de dados abertos.
+
+        Tags: [CNPJ (CNPJ Number)](#glossarioCNPJ), [Marca (Brand)](#glossarioMarca), [Direito Creditório Descontado (Invoice Financing)](#glossarioDireitoCreditorioDescontado), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Taxa Referencial – TR (Referential Rate)](#glossarioTaxaReferencial), [Indexador (Indexer)](#glossarioIndexador) e [Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)](#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias).
+
+        ### Visão de alto nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Personal_Invoice_Financing_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/personal_invoice_financings.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
+
       operationId: getPersonalInvoiceFinancings
       responses:
         '200':
@@ -246,7 +592,30 @@ paths:
       tags:
         - API - Produtos e Serviços
       summary: Antecipação de recebíveis Pessoa Jurídica
-      description: Obtém a lista de Adiantamento de Recebíveis de Pessoa Jurídica.
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém os dados de Antecipação de Recebíveis.
+
+        Esta especificação inclui todos os itens relevantes para a Especificação de API de Antecipação de Recebíveis para Pessoa Jurídica de dados abertos.
+
+        Tags: [CNPJ (CNPJ Number)](#glossarioCNPJ), [Marca (Brand)](#glossarioMarca), [Direito Creditório Descontado (Invoice Financing)](#glossarioDireitoCreditorioDescontado), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Taxa Referencial – TR (Referential Rate)](#glossarioTaxaReferencial), [Indexador (Indexer)](#glossarioIndexador) e [Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)](#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias).
+
+        ### Visão de alto nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Business_Invoice_Financing_v1.png'/>
+
+        ### Dicionário de dados
+
+        <a href='dictionary/business_invoice_financings.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
       operationId: getBusinessInvoiceFinancings
       responses:
         '200':
@@ -260,7 +629,31 @@ paths:
       tags:
         - API - Produtos e Serviços
       summary: Adiantamento a Depositante Pessoa Natural
-      description: Obtém a lista de adiantamento de depositante de Pessoa Natural.
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém os dados de Adiantamento a Depositante para pessoa natural.
+
+        Esta especificação inclui todos os itens relevantes para a Especificação de API de Adiantamento a Depositante para pessoa natural de dados abertos.
+
+        Tags: [CNPJ (CNPJ Number)](#glossarioCNPJ), [Marca (Brand)](#glossarioMarca), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Taxa Referencial – TR (Referential Rate)](#glossarioTaxaReferencial), [Indexador (Indexer)](#glossarioIndexador) e [Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)](#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias).
+
+        ### Visão de alto de nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Personal_Unarranged_Account_Overdraft_v1.png'/>
+
+
+        ### Dicionário de dados
+
+        <a href='dictionary/personal_unarranged_account_overdraft.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
       operationId: getPersonalUnarrangedAccountOverdraft
       responses:
         '200':
@@ -274,7 +667,32 @@ paths:
       tags:
         - API - Produtos e Serviços
       summary: Adiantamento a Depositante Pessoa Jurídica
-      description: Obtém a lista de adiantamento de depositante de Pessoa Jurídica.
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Obtém os dados de Adiantamento a Depositante para pessoa jurídica.
+
+        Esta especificação inclui todos os itens relevantes para a Especificação de API de Adiantamento a Depositante para pessoa jurídica de dados abertos.
+
+        Tags: [CNPJ (CNPJ Number)](#glossarioCNPJ), [Marca (Brand)](#glossarioMarca), [Instituição Financeira (Company)](#glossarioInstituicaoFinanceira), [Taxa Referencial – TR (Referential Rate)](#glossarioTaxaReferencial), [Indexador (Indexer)](#glossarioIndexador) e [Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)](#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias).
+
+        ### Visão de alto de nível das estruturas de dados
+
+        <img class='lazy' src='images/loading.gif' data-src='images/tld/TLD_Business_Unarranged_Account_Overdraft_v1.png'/>
+
+
+        ### Dicionário de dados
+
+        <a href='dictionary/business_unarranged_account_overdraft.csv' target="_blank">Fazer download do dicionário de dados</a>
+
+
+        ## Especificação em OAS 3.0
+
+        <a href='swagger/swagger_open_banking.yaml'>Download da Especificação (OAS 3.0)</a>
       operationId: getBusinessUnarrangedAccountOverdraft
       responses:
         '200':
@@ -288,7 +706,15 @@ paths:
       tags:
         - API - Admin
       summary: Métricas
-      description: "Obtém as métricas de disponibilidade das APIs"
+      description: |
+        |Versão|
+        |:-----|
+        |1     |
+
+        ### Visão Geral
+
+        Este *endpoint* possibilita ao diretório consultar estatísticas operacionais das APIs disponibilizadas pelas instituições financeiras, a fim de avaliar a qualidade dos serviços fornecidos ao usuário final.
+
       operationId: "getMetrics"
       parameters:
         - in: query
