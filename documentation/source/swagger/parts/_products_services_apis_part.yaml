@@ -521,7 +521,7 @@ components:
     BusinessAccounts:
       $ref: ./schemas/BusinessAccounts.yaml
     BusinessAccountsBrand:
-      $ref: ./schemas/BusinessAccountsCompany.yaml
+      $ref: ./schemas/BusinessAccountsBrand.yaml
     BusinessAccountsCompany:
       $ref: ./schemas/BusinessAccountsCompany.yaml
     BusinessAccountsService:
